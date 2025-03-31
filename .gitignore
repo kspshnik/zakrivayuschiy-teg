@@ -1,0 +1,7 @@
+.vscode/
+.idea/
+raw-img/
+.DS_Store
+DS_Store
+pp_layout*.*
+*.code-workspace
