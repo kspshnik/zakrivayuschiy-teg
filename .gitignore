@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+.DS_Store
+DS_Store
+pp_layout*.*
+*.code-workspace
