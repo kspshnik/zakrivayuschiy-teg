@@ -9,7 +9,7 @@
 {
   --background-color: #000000;
   --accent-color: #00CC14;
-  --heart-inking: #00CC14;
+  --heart-contour: #00CC14;
   --background-pattern: url('../svg/pattern-dark.svg');
 }
 
@@ -26,7 +26,7 @@
 {
   --background-color: #FFFFFF;
   --accent-color: #000000;
-  --heart-inking: #000000;
+  --heart-contour: #000000;
   --background-pattern: url('../svg/pattern-light.svg');
 }
 
@@ -36,7 +36,7 @@
   {
     --background-color: #FFFFFF;
     --accent-color: #000000;
-    --heart-inking: #000000;
+    --heart-contour: #000000;
     --background-pattern: url('../svg/pattern-light.svg');
   }
 }

@@ -9,7 +9,8 @@
   --bold-font-weight-dark: 785;
   --background-color: #000000;
   --accent-color: #00CC14;
-  --heart-inking: #00CC14;
+  --heart-contour: #00CC14;
+  --heart-color: #FF0000;
   --background-pattern: url('../svg/pattern-dark.svg');
 }
 

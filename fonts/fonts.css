@@ -21,21 +21,3 @@
     url('./PressStart2P-Regular.woff') format('woff2');
   font-weight: 400;
 }
-
-@font-face
-{
-  font-family: 'Inter';
-  src: local('Inter Regular'),
-    local('Inter-Regular'),
-    url('./Inter-Bold.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face
-{
-  font-family: 'Inter';
-  src: local('Inter Bold'),
-    local('Inter-Bold'),
-    url('./Inter-Bold.woff');
-  font-weight: 700;
-}
