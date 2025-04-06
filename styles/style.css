@@ -14,7 +14,19 @@
 
 */
 
-.page {
+.page
+{
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  font-family: var(--base-font-family), sans-serif;
+}
+
+@supports(font-variation-settings: normal)
+{
+  .page.theme-dark
+  {
+    font-variation-settings: 'wght' var(--regular-font-weight);
+  }
 }

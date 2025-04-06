@@ -7,6 +7,10 @@
   --bold-font-weight: 700;
   --regular-font-weight-dark: 465;
   --bold-font-weight-dark: 785;
+  --background-color: #000000;
+  --accent-color: #00CC14;
+  --heart-inking: #00CC14;
+  --background-pattern: url('../svg/pattern-dark.svg');
 }
 
 @supports (font-variation-settings: normal)
