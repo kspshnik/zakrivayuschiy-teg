@@ -15,25 +15,25 @@
 
 @supports (font-variation-settings: normal)
 {
-  .theme-dark
-  {
+  .theme-dark {
     --regular-font-weight: var(--regular-font-weight-dark);
     --bold-font-weight: var(--bold-font-weight-dark);
   }
+
+  .page.theme-dark {
+    font-variation-settings: 'wght' var(--regular-font-weight);
+  }
 }
 
-.theme-light
-{
+.theme-light {
   --background-color: #FFFFFF;
   --accent-color: #000000;
   --heart-contour: #000000;
   --background-pattern: url('../svg/pattern-light.svg');
 }
 
-@media (prefers-color-scheme: light)
-{
-  :root
-  {
+@media (prefers-color-scheme: light) {
+  :root {
     --background-color: #FFFFFF;
     --accent-color: #000000;
     --heart-contour: #000000;

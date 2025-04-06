@@ -33,14 +33,6 @@
   ;
 }
 
-@supports(font-variation-settings: normal)
-{
-  .page.theme-dark
-  {
-    font-variation-settings: 'wght' var(--regular-font-weight);
-  }
-}
-
 .content-section
 {
   max-inline-size: clamp(375px, calc(260.5634px + 30.5164vw), 700px);

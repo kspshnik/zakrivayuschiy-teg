@@ -1,7 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root
-{
-  --base-font-family: 'Inter';
+:root {
+  --base-font-family: 'Inter-Variable';
   --heading-font-family: 'Press Start 2P';
   --regular-font-weight: 400;
   --bold-font-weight: 700;
@@ -12,12 +11,4 @@
   --heart-contour: #00CC14;
   --heart-color: #FF0000;
   --background-pattern: url('../svg/pattern-dark.svg');
-}
-
-@supports (font-variation-settings: normal)
-{
-  :root
-  {
-    --base-font-family: 'Inter-Variable';
-  }
 }
