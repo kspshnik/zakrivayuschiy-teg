@@ -27,7 +27,7 @@
   --background-color: #FFFFFF;
   --accent-color: #000000;
   --heart-inking: #000000;
-  --background-pattern: url(`../svg/pattern-light.svg`);
+  --background-pattern: url('../svg/pattern-light.svg');
 }
 
 @media (prefers-color-scheme: light)
@@ -37,6 +37,6 @@
     --background-color: #FFFFFF;
     --accent-color: #000000;
     --heart-inking: #000000;
-    --background-pattern: url(`../svg/pattern-light.svg`);
+    --background-pattern: url('../svg/pattern-light.svg');
   }
 }
