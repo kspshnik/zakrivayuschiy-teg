@@ -184,7 +184,6 @@
 {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .button:focus
@@ -352,9 +351,10 @@
 .card__icon-button
 {
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   inline-size: 39px;
   block-size: 36px;
+  transition: border-color 0.3s linear;
 }
 
 .card__like-button
@@ -365,16 +365,4 @@
 .like-icon__sparks
 {
   opacity: 0;
-}
-
-.footer
-{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  inline-size: 100%;
-  block-size: fit-content;
-  padding: 50px 35px 100px 35px;
-  margin: 50px auto 100px auto;
 }

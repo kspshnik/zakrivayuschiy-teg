@@ -65,24 +65,24 @@
 
 .like-icon:active .like-icon__core {
   fill: var(--heart-color);
-  transition: fill 0.3s 0.03s linear;
+  transition: fill 0.3s linear;
 }
 
 
 .like-icon:active .like-icon__main-body {
   fill: var(--heart-color);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon.is-liked .like-icon__core {
   fill: var(--heart-color);
-  transition: fill 0.3s 0.03s linear;
+  transition: fill 0.3s linear;
 }
 
 
 .like-icon.is-liked .like-icon__main-body {
   fill: var(--heart-color);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon.is-liked .like-icon__contour {
