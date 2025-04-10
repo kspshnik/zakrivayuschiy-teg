@@ -353,13 +353,26 @@
   background-color: transparent;
   border: 2px solid transparent;
   inline-size: 39px;
-  block-size: 36px;
+  block-size: 100%;
   transition: border-color 0.3s linear;
+  display: flex;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .card__like-button
 {
   min-inline-size: 122px;
+  block-size: 100%;
 }
 
 .like-icon__sparks
