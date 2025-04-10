@@ -212,7 +212,7 @@
   outline: none;
 }
 
-.button:hover > .button__wrapper
+.button:hover
 {
   color: var(--background-color);
   transition: color 1s ease;
@@ -221,6 +221,7 @@
 .button__text
 {
   display: block;
+  position: relative;
   text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -231,7 +232,14 @@
   font-size: 14px;
   line-height: 0.9;
   letter-spacing: 0;
+  color: inherit;
   transition: color 1s ease;
+  z-index: 2;
+}
+
+.button__floppy {
+  display: block;
+  position: relative;
   z-index: 2;
 }
 
@@ -241,6 +249,11 @@
   flex-flow: column nowrap;
   justify-content: start;
   align-items: center
+}
+
+.content__add-button {
+  padding: 50px 35px;
+  margin: 50px auto 100px auto;
 }
 
 .stories
