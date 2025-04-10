@@ -2,16 +2,16 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark light">
   <title>Закрывающий тег</title>
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/globals.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/animations.css" />
-  <link rel="stylesheet" href="./styles/themes.css" />
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/themes.css">
   <link rel="icon" href="./images/favicon.ico" sizes="any">
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
@@ -67,7 +67,7 @@
             </header>
             <img
               src="./images/camper.jpg"
-              srcset="./images/camper.jpg 1x  ./images/camper-x2.jpg 2x"
+              srcset="./images/camper.jpg 1x,  ./images/camper-x2.jpg 2x"
               alt="КПДВ: Дом на колёсах"
               class="card__attraction-image">
           </div>
@@ -78,8 +78,8 @@
             материал :)
           </p>
           <footer class="card__buttons">
-            <button aria-labelledby="like-button" class="card__icon-button">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <button type="button" aria-labelledby="like-button" class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg">
                 <g class="like-icon__heart">
                   <path class="like-icon__contour"
@@ -97,10 +97,8 @@
                   fill="var(--heart-color)" />
               </svg>
             </button>
-            <button id="like-button" class="button card__like-button">
-              <div class="button__wrapper">
-                <p class="button__text">Like</p>
-              </div>
+            <button type="button" id="like-button" class="button card__like-button">
+              <span class="button__text">Like</span>
             </button>
           </footer>
         </article>
@@ -110,12 +108,10 @@
   </main>
   <footer class="footer">
     <button type="button" class="button">
-      <div class="button__wrapper">
-        <svg viewBox="0 0 29 29" width="29" height="29">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <p class="button__text">Сохранить на память</p>
-      </div>
+      <svg viewBox="0 0 29 29" width="29" height="29">
+        <use href="./svg/floppy.svg#floppy" />
+      </svg>
+      <span class="button__text">Сохранить на память</span>
     </button>
 
   </footer>
