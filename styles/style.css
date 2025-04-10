@@ -60,7 +60,7 @@
 
 .header__logo
 {
-  font-family: var(--heading-font-family), sans-serif;
+  font-family: var(--heading-font-family), fantasy, sans-serif;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 1;
   font-weight: 400;
@@ -68,7 +68,7 @@
 
 .header__title
 {
-  font-family: var(--heading-font-family), sans-serif;
+  font-family: var(--heading-font-family), fantasy, sans-serif;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   margin-block-start: 20px;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 
 .header__theme-menu
 {
-  font-family: var(--heading-font-family), sans-serif;
+  font-family: var(--heading-font-family), fantasy, sans-serif;
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
@@ -226,7 +226,7 @@
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--heading-font-family), fantasy, sans-serif;
   font-weight: var(--regular-font-weight);
   font-size: 14px;
   line-height: 0.9;
