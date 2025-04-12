@@ -11,6 +11,7 @@
   --accent-color: #00CC14;
   --heart-contour: #00CC14;
   --background-pattern: var(--background-pattern-dark);
+  --inlay-shadow: var(--inlay-shadow-dark);
 }
 
 @supports (font-variation-settings: normal)
@@ -30,6 +31,7 @@
   --accent-color: #000000;
   --heart-contour: #000000;
   --background-pattern: var(--background-pattern-light);
+  --inlay-shadow: var(--inlay-shadow-light);
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,5 +40,6 @@
     --accent-color: #000000;
     --heart-contour: #000000;
     --background-pattern: var(--background-pattern-light);
+    --inlay-shadow: var(--inlay-shadow-light);
   }
 }

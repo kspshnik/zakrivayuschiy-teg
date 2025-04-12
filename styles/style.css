@@ -333,6 +333,35 @@
   inline-size: clamp(373px, calc(260.5634px + 30.5164vw - 2px), 698px);
   display: block;
   border-top: 1px solid var(--accent-color);
+  position: relative;
+}
+
+.card__pic {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.card__inlay {
+  position: absolute;
+  inset-inline-end: clamp(0.9375rem, 0.7174rem + 0.939vw, 1.5625rem);
+  inset-block-start: 25px;
+  opacity: 0.5;
+  font-family: var(--heading-font-family), fantasy, sans-serif;
+  font-weight: var(--regular-font-weight);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0;
+  color: inherit;
+  mix-blend-mode: hard-light;
+  text-shadow: 0 0 1px var(--inlay-shadow);
+}
+
+@supports ((text-stroke: 1px var(--inlay-shadow)) or (-webkit-text-stroke: 1px var(--inlay-shadow))) {
+  .card__inlay {
+    -webkit-text-stroke: 1px var(--inlay-shadow);
+    text-stroke: 1px var(--inlay-shadow);
+    text-shadow: none;
+  }
 }
 
 .card__buttons
