@@ -30,7 +30,6 @@
   flex-flow: column nowrap;
   justify-content: start;
   align-items: center;
-  ;
 }
 
 .content-section
@@ -114,20 +113,17 @@
 {
   opacity: 0.6;
   pointer-events: none;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover
 {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus
 {
   outline: none;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled::before
@@ -161,7 +157,6 @@
 .theme-menu__button:focus-visible::after
 {
   transform: scaleX(1);
-  transition: transform 0.3s ease;
   outline: none;
 }
 
@@ -178,7 +173,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.button:focus-visible
+.button:not(.card__icon-button):focus-visible
 {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
