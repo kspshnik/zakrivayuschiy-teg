@@ -12,6 +12,7 @@
   --heart-contour: #00CC14;
   --background-pattern: var(--background-pattern-dark);
   --inlay-shadow: var(--inlay-shadow-dark);
+  --button-text-color: #00CC14;
 }
 
 @supports (font-variation-settings: normal)
@@ -32,6 +33,7 @@
   --heart-contour: #000000;
   --background-pattern: var(--background-pattern-light);
   --inlay-shadow: var(--inlay-shadow-light);
+  --button-text-color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: light) {
@@ -41,5 +43,6 @@
     --heart-contour: #000000;
     --background-pattern: var(--background-pattern-light);
     --inlay-shadow: var(--inlay-shadow-light);
+    --button-text-color: #FFFFFF;
   }
 }

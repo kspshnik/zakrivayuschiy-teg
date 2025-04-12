@@ -209,12 +209,6 @@
   outline: none;
 }
 
-.button:hover
-{
-  color: var(--background-color);
-  transition: color 1s ease;
-}
-
 .button__text
 {
   display: block;
@@ -229,14 +223,15 @@
   font-size: 14px;
   line-height: 0.9;
   letter-spacing: 0;
-  color: inherit;
-  transition: color 1s ease;
+  color: var(--button-text-color);
   z-index: 2;
+  mix-blend-mode: difference;
 }
 
 .button__floppy {
   display: block;
-
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
   position: relative;
   z-index: 2;
 }
