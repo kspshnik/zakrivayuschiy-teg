@@ -43,6 +43,16 @@
   }
 }
 
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0deg)
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .like-icon .like-icon__core {
   fill: none;
   transition: fill 0.3s 0.03s linear;
@@ -102,4 +112,8 @@
 
 .like-icon.is-liked .like-icon__sparks {
   animation: sparkling 0.3s 0.3s ease-in alternate;
+}
+
+.hue-rotate-filter {
+animation: hue-rotate 7s ease-in-out infinite alternate;
 }
