@@ -10,7 +10,7 @@
   --background-color: #000000;
   --accent-color: #00CC14;
   --heart-contour: #00CC14;
-  --background-pattern: url('../svg/pattern-dark.svg');
+  --background-pattern: var(--background-pattern-dark);
 }
 
 @supports (font-variation-settings: normal)
@@ -29,7 +29,7 @@
   --background-color: #FFFFFF;
   --accent-color: #000000;
   --heart-contour: #000000;
-  --background-pattern: url('../svg/pattern-light.svg');
+  --background-pattern: var(--background-pattern-light);
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,6 +37,6 @@
     --background-color: #FFFFFF;
     --accent-color: #000000;
     --heart-contour: #000000;
-    --background-pattern: url('../svg/pattern-light.svg');
+    --background-pattern: var(--background-pattern-light);
   }
 }
