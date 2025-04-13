@@ -39,7 +39,7 @@
 
 .bordered-section
 {
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 .header
@@ -267,19 +267,12 @@
   justify-content: start;
   align-items: center;
   gap: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
   background-color: var(--background-color);
 }
 
-.stories__item:first-of-type .card
-{
-  border-top: none;
-}
-
-.stories__item:last-of-type .card
-{
-  border-bottom: none;
+.card__lead {
+  inline-size: 100%;
+  block-size: fit-content;
 }
 
 .card__heading
@@ -320,15 +313,20 @@
 
 .card__attraction-image
 {
-  inline-size: clamp(373px, calc(260.5634px + 30.5164vw - 2px), 698px);
+  inline-size: clamp(371px, 256.5634px + 30.5164vw, 696px);
+  aspect-ratio: 1/1;
   display: block;
-  border-top: 1px solid var(--accent-color);
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
   position: relative;
 }
 
 .card__pic {
   inline-size: 100%;
-  block-size: 100%;
+  aspect-ratio: 1/1;
+  object-position: center;
+  object-fit: cover;
+  display: block;
 }
 
 .card__inlay {
@@ -375,6 +373,8 @@
   block-size: 100%;
   transition: border-color 0.3s linear;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-inline: 0;
   padding-block: 0;
 }
@@ -393,6 +393,10 @@
   min-inline-size: 130px;
   block-size: 100%;
   padding-block: 12px;
+}
+
+.like-icon {
+align-self: center;
 }
 
 .like-icon__sparks
