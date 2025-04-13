@@ -474,6 +474,7 @@ transition: scale 0.45s 0.05s linear;
 .dialog__button {
  grid-area: button;
  border: 2px solid var(--accent-color);
+ text-transform: uppercase;
 }
 
 .brightness-filter {
