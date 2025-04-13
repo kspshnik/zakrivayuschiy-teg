@@ -410,9 +410,9 @@ position: fixed;
 inset-block-start: calc((100vw - 191px) / 3);
 
 padding-block: 30px;
-padding-inline: clamp(1.875rem, 2.8891rem + -1.1268vw, 2.625rem);
-inline-size: clamp(21.3125rem, 21.0264rem + 1.2207vw, 22.125rem);
-block-size: 191px;
+padding-inline: clamp(28px, 44.2254px + -1.1268vw, 40px);
+inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
+block-size: fit-content;
 background-color: var(--background-color);
 border: 2px solid var(--accent-color);
 transition: opacity 0.5s ease-out;
