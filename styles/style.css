@@ -332,6 +332,7 @@
 }
 
 .card__inlay {
+  display: block;
   position: absolute;
   inset-inline-end: clamp(0.9375rem, 0.7174rem + 0.939vw, 1.5625rem);
   inset-block-start: 25px;
