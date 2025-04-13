@@ -296,6 +296,7 @@
   font-weight: 400;
   text-align: left;
   padding-inline: 25px;
+  align-self: start;
 }
 
 @supports(font-variation-settings: normal)
