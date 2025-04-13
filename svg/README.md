@@ -1,1 +1,5 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта. Мы приготовили для вас паттерны фона страницы в двух темах, остальные SVG нужно будет приготовить самим.
+* Проект "Завершающий тэг".
+
+Репозиторий: [https://github.com/kspshnik/zakrivayuschiy-teg](https://github.com/kspshnik/zakrivayuschiy-teg).
+
+["Закрывающий тэг"](https://kspshnik.github.io/zakrivayuschiy-teg/)

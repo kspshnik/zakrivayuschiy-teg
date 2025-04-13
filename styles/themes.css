@@ -9,34 +9,51 @@
 {
   --background-color: #000000;
   --accent-color: #00CC14;
-  --heart-inking: #00CC14;
-  --background-pattern: url('../svg/pattern-dark.svg');
+  --heart-contour: #00CC14;
+  --background-pattern: var(--background-pattern-dark);
+  --inlay-shadow: var(--inlay-shadow-dark);
+  --button-text-color: #00CC14;
 }
 
 @supports (font-variation-settings: normal)
 {
-  .theme-dark
-  {
+  .theme-dark {
     --regular-font-weight: var(--regular-font-weight-dark);
     --bold-font-weight: var(--bold-font-weight-dark);
   }
+
+  .page.theme-dark {
+    font-variation-settings: 'wght' var(--regular-font-weight);
+  }
 }
 
-.theme-light
-{
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000000;
+    --accent-color: #00CC14;
+    --heart-contour: #00CC14;
+    --background-pattern: var(--background-pattern-dark);
+    --inlay-shadow: var(--inlay-shadow-dark);
+    --button-text-color: #00CC14;
+  }
+}
+
+.theme-light {
   --background-color: #FFFFFF;
   --accent-color: #000000;
-  --heart-inking: #000000;
-  --background-pattern: url(`../svg/pattern-light.svg`);
+  --heart-contour: #000000;
+  --background-pattern: var(--background-pattern-light);
+  --inlay-shadow: var(--inlay-shadow-light);
+  --button-text-color: #FFFFFF;
 }
 
-@media (prefers-color-scheme: light)
-{
-  :root
-  {
+@media (prefers-color-scheme: light) {
+  :root {
     --background-color: #FFFFFF;
     --accent-color: #000000;
-    --heart-inking: #000000;
-    --background-pattern: url(`../svg/pattern-light.svg`);
+    --heart-contour: #000000;
+    --background-pattern: var(--background-pattern-light);
+    --inlay-shadow: var(--inlay-shadow-light);
+    --button-text-color: #FFFFFF;
   }
 }
