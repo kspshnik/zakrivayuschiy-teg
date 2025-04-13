@@ -219,11 +219,13 @@
   letter-spacing: 0;
 }
 
-.button__floppy {
+.button__floppy
+{
   display: block;
 }
 
-.animated-content {
+.animated-content
+{
   position: relative;
   z-index: 2;
   color: var(--button-text-color);
@@ -238,7 +240,8 @@
   align-items: center
 }
 
-.content__add-button {
+.content__add-button
+{
   padding: 15px 18px;
   margin: 50px 35px 100px 35px;
   min-inline-size: 306px;
@@ -270,7 +273,8 @@
   background-color: var(--background-color);
 }
 
-.card__lead {
+.card__lead
+{
   inline-size: 100%;
   block-size: fit-content;
 }
@@ -322,7 +326,8 @@
   position: relative;
 }
 
-.card__pic {
+.card__pic
+{
   inline-size: 100%;
   aspect-ratio: 1/1;
   object-position: center;
@@ -330,7 +335,8 @@
   display: block;
 }
 
-.card__inlay {
+.card__inlay
+{
   display: block;
   position: absolute;
   inset-inline-end: clamp(0.9375rem, 0.7174rem + 0.939vw, 1.5625rem);
@@ -346,8 +352,10 @@
   text-shadow: 0 0 1px var(--inlay-shadow);
 }
 
-@supports ((text-stroke: 1px var(--inlay-shadow)) or (-webkit-text-stroke: 1px var(--inlay-shadow))) {
-  .card__inlay {
+@supports ((text-stroke: 1px var(--inlay-shadow)) or (-webkit-text-stroke: 1px var(--inlay-shadow)))
+{
+  .card__inlay
+  {
     -webkit-text-stroke: 1px var(--inlay-shadow);
     text-stroke: 1px var(--inlay-shadow);
     text-shadow: none;
@@ -380,11 +388,13 @@
   padding-block: 0;
 }
 
-.card__icon-button:focus {
+.card__icon-button:focus
+{
   outline: none;
 }
 
-.card__icon-button:focus-visible {
+.card__icon-button:focus-visible
+{
   outline: none;
   border-color: var(--accent-color);
 }
@@ -396,8 +406,9 @@
   padding-block: 12px;
 }
 
-.like-icon {
-align-self: center;
+.like-icon
+{
+  align-self: center;
 }
 
 .like-icon__sparks
@@ -405,49 +416,53 @@ align-self: center;
   opacity: 0;
 }
 
-.dialog {
-position: fixed;
-inset-block-start: calc((100vw - 191px) / 3);
-
-padding-block: 30px;
-padding-inline: clamp(28px, 44.2254px + -1.1268vw, 40px);
-inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
-block-size: fit-content;
-background-color: var(--background-color);
-border: 2px solid var(--accent-color);
-transition: opacity 0.5s ease-out;
-transition: scale 0.45s 0.05s linear;
+.dialog
+{
+  align-self: center;
+  padding-block: 30px;
+  padding-inline: clamp(28px, 44.2254px + -1.1268vw, 40px);
+  inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
+  block-size: fit-content;
+  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+  transition: opacity 0.5s ease-out, transform 0.45s 0.05s linear;
 }
 
-.dialog::backdrop {
+.dialog::backdrop
+{
   background-color: #000000;
   opacity: 0.75;
 }
 
-.dialog:not([open]) {
+.dialog:not([open])
+{
   pointer-events: none;
   opacity: 0;
   scale: 0;
+  user-select: none;
 }
 
-.dialog[open] {
+.dialog[open]
+{
   opacity: 1;
   scale: 1;
 }
 
-.dialog__form {
+.dialog__form
+{
   display: grid;
-  grid-template-columns: 39px 1fr;
-  grid-template-rows: 1fr 38px;
+  grid-template-columns: fit-content 1fr;
+  grid-template-rows: 1fr fit-content;
   grid-template-areas:
-  "icon caption"
-  "button button";
+    "icon caption"
+    "button button";
   gap: 30px 18px;
   inline-size: 100%;
   block-size: 100%;
 }
 
-.dialog__floppy {
+.dialog__floppy
+{
   inline-size: 39px;
   block-size: 39px;
   grid-area: icon;
@@ -456,7 +471,8 @@ transition: scale 0.45s 0.05s linear;
   color: var(--accent-color);
 }
 
-.dialog__caption {
+.dialog__caption
+{
   grid-area: caption;
   inline-size: 100%;
   block-size: 100%;
@@ -472,40 +488,50 @@ transition: scale 0.45s 0.05s linear;
   color: var(--accent-color);
 }
 
-.dialog__button {
- grid-area: button;
- border: 2px solid var(--accent-color);
- text-transform: uppercase;
+.dialog__button
+{
+  grid-area: button;
+  border: 2px solid var(--accent-color);
+  text-transform: uppercase;
+  padding-block: 13px;
 }
 
-.brightness-filter {
+.brightness-filter
+{
   filter: brightness(1.13);
 }
 
-.blur-filter {
+.blur-filter
+{
   filter: blur(5px);
 }
 
-.contrast-filter {
+.contrast-filter
+{
   filter: contrast(0.95);
 }
 
-.greyscale-filter {
+.greyscale-filter
+{
   filter: grayscale(0.97);
 }
 
-.invert-contrast-filter {
+.invert-contrast-filter
+{
   filter: invert(0.99) contrast(1.47);
 }
 
-.opacity-filter {
+.opacity-filter
+{
   filter: opacity(0.75);
 }
 
-.saturate-filter {
+.saturate-filter
+{
   filter: saturate(1.23);
 }
 
-.sepia-filter {
+.sepia-filter
+{
   filter: sepia(0.87);
 }
